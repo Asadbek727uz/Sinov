@@ -1,6 +1,7 @@
 package com.example.auth
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,6 +18,12 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
          auth = FirebaseAuth.getInstance()
+
+
+        Toast.makeText(this, "Yuugg", Toast.LENGTH_SHORT).show()
+
+
+
 
         Picasso.get() .load(auth.currentUser?.photoUrl).into(binding.i)
     }
