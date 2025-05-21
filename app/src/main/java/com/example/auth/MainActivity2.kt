@@ -25,6 +25,8 @@ class MainActivity2 : AppCompatActivity() {
 
 
 
+
+
         Picasso.get() .load(auth.currentUser?.photoUrl).into(binding.i)
     }
 }
