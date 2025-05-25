@@ -18,15 +18,7 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
          auth = FirebaseAuth.getInstance()
-
-
-        Toast.makeText(this, "Yuugg", Toast.LENGTH_SHORT).show()
-
-
-
-
-
-
-        Picasso.get() .load(auth.currentUser?.photoUrl).into(binding.i)
+        Picasso.get() .load(auth.currentUser?.photoUrl).into(binding.imageProgi)
+        binding.tvName.text = auth.currentUser?.displayName
     }
 }

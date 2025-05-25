@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-    implementation ("com.google.android.gms:play-services-auth:20.7.0")
+    implementation ("com.google.android.gms:play-services-auth:19.2.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -48,7 +48,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
     implementation(libs.androidx.credentials)
-    implementation(libs.androidx.credentials.play.services.auth)
+//    implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
